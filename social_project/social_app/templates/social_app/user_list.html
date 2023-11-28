@@ -1,3 +1,4 @@
+{% extends 'social_app/base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +8,13 @@
     
 </head>
 <body>
+    {% block content %}
     <h1>User list</h1>
     <ul>
         {% for user in users %}
         <li><a href="{% url 'user_detail' username=user.username %}">{{ user.username }}</a></li>
         {% endfor %}
     </ul>
-   
+   {% endblock %}
 </body>
 </html>

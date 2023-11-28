@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from django.shortcuts import render,get_object_or_404
 from .models import User,Post
 # Create your views here.
-def homepage(request):
-    return HttpResponse('<h1>finally weekend !</h1>')
+def home(request):
+    return render(request, 'social_app/homepage.html')
 
 
 def user_list(request):

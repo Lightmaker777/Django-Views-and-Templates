@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import homepage,user_list,user_details,post_detail,post_list,user_posts
+from .views import home,user_list,user_details,post_detail,post_list,user_posts
 
 
 urlpatterns = [
-    #path('',homepage,name='home')
+    path('',home,name='home'),
     path('users/',user_list,name='user_list'),
     path('users/<str:username>/',user_details,name='user_detail'),
     path('posts/',post_list,name='post_list'),
