@@ -8,8 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Welcome to our app feel free to post anything</header>
-    <button><a href="{% url  'home' %}">home</a></button>
+    <header>Welcome to our app! Feel free to post anything.</header>
+    <p><button><a href="{% url  'home' %}">Home</a></button></p>
+    
     {% block content %}
 
     {% endblock %}
