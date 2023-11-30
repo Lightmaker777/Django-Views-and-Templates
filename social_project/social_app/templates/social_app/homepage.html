@@ -10,10 +10,14 @@
 </head>
 <body>
     {% block content %}
-<h1>Finally Learning Django!!!</h1>
+<h1>Finally Learning Django!!! 💥💥💥</h1>
+<p>
+    <button><a href="{% url  'user_list' %}">Users 👥</a></button>
+    <button><a href="{% url  'create_user' %}">Create User 👤</a></button>
+</p>
  
-<button><a href="{% url  'user_list' %}">Users</a></button>
-<button><a href="{% url  'create_user' %}">Create User</a></button>
+
+
  
 
 

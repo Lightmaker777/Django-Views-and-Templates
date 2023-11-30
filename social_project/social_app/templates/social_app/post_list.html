@@ -1,19 +1,68 @@
 
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'social_app/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: rgb(245, 170, 247);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #af2f2f;
+        }
+
+        p {
+            color: #522121;
+        }
+
+        .scroll-container {
+            column-count: 1;
+            margin-top: 20px; /* Add margin to the top */
+            overflow-x: scroll;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Remove default margin to prevent spacing issues */
+        }
+
+        li {
+            margin-bottom: 10px;
+            background-color: rgb(235, 191, 235);
+        }
+
+        a {
+            color: #28578a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Post list</h1>
-    <ul>
-        {% for post in posts %}
-        <li><a href="{% url 'post_detail' post_id=post.id %}">{{ post.user.username }} - {{ post.created_at }}</a></li>
-        {% endfor %}
-    </ul>
+    <p><button><a href="{% url  'home' %}">Home 🏡</a></button></p>
+    <div class="scroll-container">
+        <ul>
+            {% for post in posts %}
+            <li><a href="{% url 'post_detail' post_id=post.id %}">{{ post.user.username }} - {{ post.created_at }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>

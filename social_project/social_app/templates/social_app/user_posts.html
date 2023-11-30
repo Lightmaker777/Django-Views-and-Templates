@@ -8,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>{{ user.username }}'s Post</h1>
+    <p><button><a href="{% url  'home' %}">Home 🏡</a></button></p>
     <ul>
         {% for post in posts %}
             <li>{{ post.created_at }} - {{ post.post }}</li>

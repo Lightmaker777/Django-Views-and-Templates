@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Post Detail</h1>
+    <h1>Post Detail 📰</h1>
+    <p><button><a href="{% url  'home' %}">Home 🏡</a></button></p>
     <p>User: {{ post.user.username }}</p>
     <p>Post: {{ post.post }}</p>
     <p>Created At: {{ post.created_at }}</p>
