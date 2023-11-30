@@ -5,16 +5,16 @@
 
 ### Learning Django: here are some examples ...
 
-![Home page](home.png)
+![Home page](IMAGES/home.png)
 
-![Users page](user_list.png)
+![Users page](IMAGES/user_list.png)
 
-![Create User page](create_user.png)
+![Create User page](IMAGES/create_user.png)
 
-![User Detail page](user_detail.png)
+![User Detail page](IMAGES/user_detail.png)
 
-![Create Post page](create_post.png)
+![Create Post page](IMAGES/create_post.png)
 
-![Post List page](post_list.png)
+![Post List page](IMAGES/post_list.png)
 
 ## Changes will be made and updated  👈🏻
