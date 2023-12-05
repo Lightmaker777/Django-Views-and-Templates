@@ -8,6 +8,9 @@ from django.shortcuts import render,get_object_or_404
 from .models import User,Post
 from django.urls import reverse_lazy
 from .form_1 import PostForm, UserForm
+import logging
+
+logger = logging.getLogger(__name__)
 
 class HomePageView(TemplateView):
     template_name = 'social_app/homepage.html'
@@ -59,8 +62,13 @@ class UserPostsView(ListView):
 class CreateUserView(CreateView):
     model = User
     form_class = UserForm
-    template_name = 'social_app/user_form.html'    
+    template_name ='social_app/user_form.html'
     success_url = reverse_lazy('user_list')
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        logger.info(f'User created {self.object.username}')
+        return response
+       
 
 class CreatePostView(CreateView):
     model = Post
@@ -83,5 +91,15 @@ class UpdateUserView(UpdateView):
     def get_object(self, queryset=None):
         return get_object_or_404(User,username = self.kwargs['username'])
     def get_success_url(self):
-        return reverse_lazy('user_detail',kwargs = {'username':self.object.username})
+        return reverse_lazy('user_detail', kwargs={'username': self.object.username})
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        logger.debug(self.request)
+        logger.info(f"User updated: {self.object.username}")
+        return response
+    
+    def form_invalid(self, form):
+        response = super().form_invalid(form)
+        logger.warning(f"User update failed: {self.object.username}")
+        return response
     

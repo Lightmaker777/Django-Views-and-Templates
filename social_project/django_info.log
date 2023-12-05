@@ -1,0 +1,21 @@
+Watching for file changes with StatReloader
+"GET /app HTTP/1.1" 301 0
+"GET /app/ HTTP/1.1" 200 741
+"GET /static/social_app/styles.css HTTP/1.1" 304 0
+"GET /app/create/ HTTP/1.1" 200 1381
+"GET /app/users/ HTTP/1.1" 200 25612
+"GET /app/users/elizabethmartinez HTTP/1.1" 200 1173
+"GET /app/users/elizabethmartinez/update/ HTTP/1.1" 200 1627
+"POST /app/users/elizabethmartinez/update/ HTTP/1.1" 302 0
+"GET /app/users/elizabethmartinez HTTP/1.1" 200 1173
+"GET /app/users/elizabethmartinez/posts/ HTTP/1.1" 200 490
+"GET /app/users/elizabethmartinez HTTP/1.1" 200 1173
+"GET /app/users/post/elizabethmartinez/ HTTP/1.1" 200 1212
+"POST /app/users/post/elizabethmartinez/ HTTP/1.1" 200 1303
+"GET /app/posts/ HTTP/1.1" 200 540
+"GET /app/ HTTP/1.1" 200 741
+"GET /app/create/ HTTP/1.1" 200 1381
+"GET /app/users/ HTTP/1.1" 200 25612
+"GET /app/users/brownjessica HTTP/1.1" 200 1161
+"GET /app/users/brownjessica/update/ HTTP/1.1" 200 1635
+"POST /app/users/brownjessica/update/ HTTP/1.1" 200 1705

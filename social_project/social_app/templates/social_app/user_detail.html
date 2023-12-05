@@ -1,10 +1,10 @@
 {% extends 'social_app/base.html' %}
-{% load static %}
+
 
 
 
     {% block content %}
-    <link rel="stylesheet" type="text/css" href="{% static 'social_app/styles.css' %}">
+    
     <h1>User Detail 📚</h1>
     <p>Username : {{ user.username|upper }}</p>
     <p>Email : {{ user.email }}</p>
