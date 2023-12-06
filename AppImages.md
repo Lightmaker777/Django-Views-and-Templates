@@ -17,4 +17,6 @@
 
 ![Post List page](IMAGES/post_list.png)
 
+![Tests](IMAGES/tests.png)
+
 ## Changes will be made and updated  👈🏻

@@ -19,3 +19,19 @@ Watching for file changes with StatReloader
 "GET /app/users/brownjessica HTTP/1.1" 200 1161
 "GET /app/users/brownjessica/update/ HTTP/1.1" 200 1635
 "POST /app/users/brownjessica/update/ HTTP/1.1" 200 1705
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2171
+Not Found: /favicon.ico
+"GET /app/ HTTP/1.1" 200 741
+"GET /static/social_app/styles.css HTTP/1.1" 200 578
+"GET /app/users/ HTTP/1.1" 200 25612
+"GET /app/users/cjackson HTTP/1.1" 200 1189
+"GET /app/users/cjackson/posts/ HTTP/1.1" 200 820
+"GET /app/posts/cjackson/3/delete/ HTTP/1.1" 200 960
+"GET /app/users/cjackson/posts/ HTTP/1.1" 200 820
+"GET /app/posts/cjackson/3/update/ HTTP/1.1" 200 1370
+"GET /app/users/cjackson/posts/ HTTP/1.1" 200 822
+"GET /app/ HTTP/1.1" 200 741
+"GET /app/create/ HTTP/1.1" 200 1381
+"GET /app/ HTTP/1.1" 200 741
