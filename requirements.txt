@@ -64,6 +64,7 @@ deprecation==2.1.0
 distro==1.8.0
 distro-info==1.5
 Django==4.2.7
+django-crontab==0.7.1
 django-extensions==3.2.3
 duplicity==1.2.2
 einops==0.7.0
