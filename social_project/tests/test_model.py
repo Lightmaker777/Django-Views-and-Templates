@@ -3,8 +3,6 @@ from social_app.models import User,Post
 from django.utils import timezone
 from django.core.exceptions import ValidationError
 
-
-
 class UserModelTest(TestCase):
     def setUp(self) :
         self.user_data = {

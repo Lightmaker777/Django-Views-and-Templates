@@ -8,6 +8,8 @@ from django.http import HttpResponse
 from .models import User, Post
 from django.urls import reverse_lazy
 from .form_1 import UserForm,PostForm
+from django.contrib.auth.views import LoginView, LogoutView
+from .form_1 import LoginForm
 import logging
 logger = logging.getLogger(__name__)
 
@@ -135,3 +137,10 @@ class DeletePostView(DeleteView):
         return reverse_lazy('user_posts', kwargs={'username': self.object.user.username})
  
     
+class MyLoginView(LoginView):
+    form_class = LoginForm
+    template_name = 'social_app/login.html'
+
+class MyLogoutView(LogoutView):
+    # You can customize this view if needed
+    template_name = 'social_app/logout.html'

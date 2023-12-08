@@ -19,4 +19,6 @@
 
 ![Tests](IMAGES/tests.png)
 
+![Login](IMAGES/new_user_login_button.png)
+
 ## Changes will be made and updated  👈🏻

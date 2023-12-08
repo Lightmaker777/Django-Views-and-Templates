@@ -103,3 +103,179 @@ Not Found: /favicon.ico
 "GET /admin/ HTTP/1.1" 200 6663
 "GET /app/posts/kristineferguson123/165/update/ HTTP/1.1" 200 1256
 "GET /app/ HTTP/1.1" 200 741
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2171
+"GET /app/ HTTP/1.1" 200 856
+"GET /static/social_app/styles.css HTTP/1.1" 200 578
+Internal Server Error: /app/login/
+Traceback (most recent call last):
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+"GET /app/login/ HTTP/1.1" 500 88737
+/home/dci-student/Downloads/dci_social/social_project/social_app/views_1.py changed, reloading.
+Watching for file changes with StatReloader
+/home/dci-student/Downloads/dci_social/social_project/social_app/views_1.py changed, reloading.
+Watching for file changes with StatReloader
+/home/dci-student/Downloads/dci_social/social_project/social_app/views_1.py changed, reloading.
+Watching for file changes with StatReloader
+/home/dci-student/Downloads/dci_social/social_project/social_app/views_1.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /app/login/
+Traceback (most recent call last):
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /app/login/ HTTP/1.1" 500 138921
+Internal Server Error: /app/login/
+Traceback (most recent call last):
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/dci-student/.local/lib/python3.11/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /app/login/ HTTP/1.1" 500 138921
+"GET /app/login/ HTTP/1.1" 200 1304
+"POST /app/login/ HTTP/1.1" 200 1465
+"POST /app/login/ HTTP/1.1" 200 1465
+"GET /app/login/ HTTP/1.1" 200 1304
+"GET /app/ HTTP/1.1" 200 856
+"GET /app/create/ HTTP/1.1" 200 1496
+"POST /app/create/ HTTP/1.1" 302 0
+"GET /app/users/ HTTP/1.1" 200 16046
+"GET /app/login/ HTTP/1.1" 200 1304
+"GET /app/ HTTP/1.1" 200 856
+"GET /app/create/ HTTP/1.1" 200 1496
+"GET /app/users/ HTTP/1.1" 200 16046
+"GET /app/users/JANNISSIMO11 HTTP/1.1" 200 1171
+"GET /app/users/JANNISSIMO11/posts/ HTTP/1.1" 200 475
+"GET /app/users/JANNISSIMO11 HTTP/1.1" 200 1171
+"GET /app/users/JANNISSIMO11/update/ HTTP/1.1" 200 1568
+"GET /app/users/ HTTP/1.1" 200 16046
+"GET /app/users/JANNISSIMO11 HTTP/1.1" 200 1171
+"GET /app/users/JANNISSIMO11/delete/ HTTP/1.1" 200 1115
+"POST /app/users/JANNISSIMO11/delete/ HTTP/1.1" 302 0
+"GET /app/users/ HTTP/1.1" 200 15949
+"GET /app/ HTTP/1.1" 200 856
+"GET /app/login/ HTTP/1.1" 200 1304
+"POST /app/login/ HTTP/1.1" 200 1461
+"GET /app/ HTTP/1.1" 200 856
+"GET /app/ HTTP/1.1" 200 856
+"GET /app/ HTTP/1.1" 200 870
+"GET /app/ HTTP/1.1" 200 870
+Watching for file changes with StatReloader
+"GET /app/ HTTP/1.1" 200 1233
+"GET /app/users/ HTTP/1.1" 200 16326
+"GET /app/users/katelyndalton HTTP/1.1" 200 1666
+"GET /app/users/post/katelyndalton/ HTTP/1.1" 200 1704
+"GET /app/login/ HTTP/1.1" 200 1681

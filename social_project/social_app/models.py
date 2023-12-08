@@ -2,6 +2,8 @@ from django.db import models
 from django.utils import timezone
 from django.core.exceptions import ValidationError
 from django.core import validators
+from django.contrib.auth.models import User
+
 # Create your models here.
 
 bad_word = ['cat','dog','fish']
